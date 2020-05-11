@@ -314,6 +314,7 @@ export default class PrismaZoom extends PureComponent {
    */
   handleDoubleClick = event => {
     event.preventDefault()
+    return
 
     if (this.state.zoom === this.props.minZoom) {
       this.fullZoomInOnPosition(event.pageX, event.pageY)
